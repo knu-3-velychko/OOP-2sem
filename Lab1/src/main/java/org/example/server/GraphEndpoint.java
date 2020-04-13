@@ -1,4 +1,4 @@
-package org.example;
+package org.example.server;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -20,12 +20,13 @@ public class GraphEndpoint {
 
     @OnMessage
     public void onMessage(Session session, String message) throws IOException {
-        //TODO: handle new messages
+        broadcast();
     }
 
     @OnClose
     public void onClose(Session session) throws IOException {
-        //TODO: WebSocket connection closes
+        graphEndpoints.remove(this);
+        //TODO: send message on close
     }
 
     @OnError
@@ -33,7 +34,7 @@ public class GraphEndpoint {
         //TODO: error handling
     }
 
-    private static void broadcast(){
+    private void broadcast() {
         //TODO: send message
     }
 }
