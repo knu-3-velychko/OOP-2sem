@@ -18,6 +18,8 @@ public class CardService {
         return cardRepository.findByUser(email);
     }
 
+//    public Card addCard(Card)
+
     @Transactional
     public Card blockCard(String cardNumber) {
         Optional<Card> card = cardRepository.findById(cardNumber);
