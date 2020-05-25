@@ -12,6 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatListModule } from '@angular/material/list';
+
 import { initializer } from 'src/utils/app-init';
 import { LoginComponent } from './login/login.component';
 import { StartComponent } from './start/start.component';
@@ -43,6 +46,7 @@ import { CardsComponent } from './user/cards/cards.component';
     MatButtonModule,
     MatInputModule,
     MatSelectModule,
+    MatPaginatorModule,
     FlexModule,
     FlexLayoutModule,
     RouterModule
