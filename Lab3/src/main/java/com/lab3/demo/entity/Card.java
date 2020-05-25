@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Card {
     @Id
     @Column(name = "card_number")
-    private Long id;
+    private String id;
 
     @ManyToOne
     private User user;

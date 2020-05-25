@@ -1,4 +1,4 @@
-package converter;
+package com.lab3.demo.converter;
 
 import com.lab3.demo.dto.UserDTO;
 import com.lab3.demo.entity.User;

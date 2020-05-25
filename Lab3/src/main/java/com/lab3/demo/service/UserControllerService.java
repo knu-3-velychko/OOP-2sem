@@ -2,7 +2,7 @@ package com.lab3.demo.service;
 
 import com.lab3.demo.dto.UserDTO;
 import com.lab3.demo.service.data.UserService;
-import converter.UserConverter;
+import com.lab3.demo.converter.UserConverter;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
