@@ -2,6 +2,7 @@ package com.lab3.demo.service;
 
 import com.lab3.demo.converter.CardConverter;
 import com.lab3.demo.dto.CardDTO;
+import com.lab3.demo.entity.Card;
 import com.lab3.demo.exception.CardNumberNotNullException;
 import com.lab3.demo.service.data.CardService;
 import lombok.AllArgsConstructor;
@@ -13,9 +14,15 @@ import java.util.List;
 @AllArgsConstructor
 public class CardControllerService {
     private CardService cardService;
+
     private CardConverter cardConverter;
 
-    public List<CardDTO> findByUser(String email){
+    public CardDTO addCard(CardDTO cardDTO) {
+        Card card = this.cardService.addCard(cardConverter.convertToEntity(cardDTO));
+        return cardConverter.convertToDTO(cardService.addCard(card));
+    }
+
+    public List<CardDTO> findByUser(String email) {
         return cardConverter.convertToListDTO(cardService.findByUser(email));
     }
 

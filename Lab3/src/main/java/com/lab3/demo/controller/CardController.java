@@ -18,7 +18,10 @@ public class CardController {
         return cardService.findByUser(email);
     }
 
-//    @PostMapping(value="/card")
+    @PostMapping(value = "/card")
+    public CardDTO addCard(@RequestBody CardDTO cardDTO) {
+        return cardService.addCard(cardDTO);
+    }
 
     @PatchMapping(value = "/block/{cardNumber}")
     public CardDTO blockCard(@PathVariable(value = "cardNumber") String cardNumber) {

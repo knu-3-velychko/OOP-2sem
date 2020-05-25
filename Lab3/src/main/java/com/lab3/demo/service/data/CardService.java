@@ -1,8 +1,10 @@
 package com.lab3.demo.service.data;
 
+import com.lab3.demo.entity.Account;
 import com.lab3.demo.entity.Card;
 import com.lab3.demo.exception.CardNotFoundException;
 import com.lab3.demo.exception.CardStateException;
+import com.lab3.demo.repository.AccountRepository;
 import com.lab3.demo.repository.CardRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,12 +15,17 @@ import java.util.Optional;
 @Service
 public class CardService {
     private CardRepository cardRepository;
+    private AccountRepository accountRepository;
 
     public List<Card> findByUser(String email) {
         return cardRepository.findByUser(email);
     }
 
-//    public Card addCard(Card)
+    @Transactional
+    public Card addCard(Card card) {
+        accountRepository.save(card.getAccount());
+        return cardRepository.save(card);
+    }
 
     @Transactional
     public Card blockCard(String cardNumber) {
