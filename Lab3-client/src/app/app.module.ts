@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 
@@ -9,15 +10,29 @@ import { FlexModule, FlexLayoutModule } from "@angular/flex-layout";
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { initializer } from 'src/utils/app-init';
 import { LoginComponent } from './login/login.component';
 import { StartComponent } from './start/start.component';
+import { UserProfileComponent } from './user/user-profile/user-profile.component';
+import { PaymentComponent } from './user/payment/payment.component';
+import { ReplenishComponent } from './user/replenish/replenish.component';
+import { AdminProfileComponent } from './admin/admin-profile/admin-profile.component';
+import { ManageCardsComponent } from './admin/manage-cards/manage-cards.component';
+import { CardsComponent } from './user/cards/cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    StartComponent
+    StartComponent,
+    UserProfileComponent,
+    PaymentComponent,
+    ReplenishComponent,
+    AdminProfileComponent,
+    ManageCardsComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,17 +41,20 @@ import { StartComponent } from './start/start.component';
     KeycloakAngularModule,
     MatCardModule,
     MatButtonModule,
+    MatInputModule,
+    MatSelectModule,
     FlexModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule
   ],
-  providers: [
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializer,
-      deps: [KeycloakService],
-      multi: true
-    }
-  ],
+  // providers: [
+  //   {
+  //     provide: APP_INITIALIZER,
+  //     useFactory: initializer,
+  //     deps: [KeycloakService],
+  //     multi: true
+  //   }
+  // ],
   bootstrap: [AppComponent]
 })
 
