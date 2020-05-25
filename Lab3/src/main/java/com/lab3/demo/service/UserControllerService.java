@@ -5,7 +5,6 @@ import com.lab3.demo.service.data.UserService;
 import converter.UserConverter;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
