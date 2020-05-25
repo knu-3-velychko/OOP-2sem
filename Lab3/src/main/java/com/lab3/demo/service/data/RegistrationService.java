@@ -1,4 +1,4 @@
-package com.lab3.demo.service;
+package com.lab3.demo.service.data;
 
 import com.lab3.demo.entity.User;
 import com.lab3.demo.exception.UserAlreadyExistsException;
