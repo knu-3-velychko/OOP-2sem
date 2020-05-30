@@ -12,11 +12,11 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class RegistrationService {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Transactional
     public User save(User currentUser) {
-        Optional<User> oldUser = userRepository.finByEmail(currentUser.getEmail());
+        Optional<User> oldUser = userRepository.findByEmail(currentUser.getEmail());
         oldUser.ifPresent(entity -> {
             throw new UserAlreadyExistsException("User already exist.");
         });

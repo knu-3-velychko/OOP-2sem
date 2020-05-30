@@ -24,6 +24,7 @@ import { ReplenishComponent } from './user/replenish/replenish.component';
 import { AdminProfileComponent } from './admin/admin-profile/admin-profile.component';
 import { ManageCardsComponent } from './admin/manage-cards/manage-cards.component';
 import { CardsComponent } from './user/cards/cards.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CardsComponent } from './user/cards/cards.component';
     ReplenishComponent,
     AdminProfileComponent,
     ManageCardsComponent,
-    CardsComponent
+    CardsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

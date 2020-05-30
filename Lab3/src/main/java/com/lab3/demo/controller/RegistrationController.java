@@ -1,5 +1,7 @@
 package com.lab3.demo.controller;
 
+import com.lab3.demo.dto.UserDTO;
+import com.lab3.demo.service.RegistrationControllerService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -14,9 +16,11 @@ import javax.validation.Valid;
 @AllArgsConstructor
 public class RegistrationController {
 
-    //TODO:
-//    @PostMapping(value = "/registration")
-//    public ResponseEntity registration(@Valid @RequestBody UseDTO userDTO) {
-//        //TODO:
-//    }
+    private final RegistrationControllerService registrationControllerService;
+
+    @PostMapping(value = "/registration")
+    public ResponseEntity<String> registration(@Valid @RequestBody UserDTO userDTO) {
+        registrationControllerService.save(userDTO);
+        return ResponseEntity.accepted().build();
+    }
 }

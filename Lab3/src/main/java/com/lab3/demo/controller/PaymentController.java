@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @AllArgsConstructor
 public class PaymentController {
-    private PaymentControllerService paymentService;
+    private final PaymentControllerService paymentService;
 
     @PostMapping(value = "/payment")
     public CardDTO addCard(@RequestBody PaymentDTO paymentDTO) {

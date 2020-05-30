@@ -11,7 +11,7 @@ import java.util.List;
 @CrossOrigin
 @AllArgsConstructor
 public class CardController {
-    private CardControllerService cardService;
+    private final CardControllerService cardService;
 
     @GetMapping(value = "/cards/{email}")
     public List<CardDTO> findByUser(@PathVariable("email") String email) {

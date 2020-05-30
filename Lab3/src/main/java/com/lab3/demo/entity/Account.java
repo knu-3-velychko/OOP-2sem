@@ -1,25 +1,26 @@
 package com.lab3.demo.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Data
-@Table(name = "accounts")
+@Entity
+@NoArgsConstructor
 public class Account {
     @Id
-    @GeneratedValue(generator="increment")
-    @GenericGenerator(name="increment", strategy = "increment")
-    private Long id;
+    @GeneratedValue(generator = "accounts_id_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "accounts_id_seq", sequenceName = "accounts_id_seq", allocationSize = 5)
+    @Column(name = "id", updatable = false)
+    private Integer id;
 
-
-    @Column(name="balance")
+    @Column(name = "balance")
     private int balance;
 
-    @Column(name="blocked")
+    @Column(name = "blocked")
     private boolean blocked;
+
 }

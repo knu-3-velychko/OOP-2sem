@@ -13,7 +13,7 @@ import java.util.List;
 @CrossOrigin
 @AllArgsConstructor
 public class UserController {
-    private UserControllerService userService;
+    private final UserControllerService userService;
 
     @GetMapping(value = "/users")
     public List<UserDTO> findUsers() {

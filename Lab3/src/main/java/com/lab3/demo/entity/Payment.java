@@ -1,22 +1,26 @@
 package com.lab3.demo.entity;
 
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
-@Table(name = "payments")
+@Entity
+@NoArgsConstructor
 public class Payment {
     @Id
-    @GeneratedValue(generator = "increment")
-    @GenericGenerator(name = "increment", strategy = "increment")
+    @GeneratedValue(generator = "payments_id_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "payments_id_seq", sequenceName = "payments_id_seq", allocationSize = 5)
+    @Column(name = "id", updatable = false)
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "card_from", updatable = false, nullable = false)
     private Card from;
 
     @ManyToOne
+    @JoinColumn(name = "card_to", updatable = false, nullable = false)
     private Card to;
 
     @Column(name = "amount")

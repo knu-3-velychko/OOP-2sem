@@ -11,13 +11,13 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class UserService {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public List<User> findAll() {
         return userRepository.findAll();
     }
 
     public Optional<User> findUserByEmail(String email) {
-        return userRepository.finByEmail(email);
+        return userRepository.findByEmail(email);
     }
 }
