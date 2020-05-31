@@ -1,21 +1,35 @@
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { PaymentComponent } from './user/payment/payment.component';
 import { ReplenishComponent } from './user/replenish/replenish.component';
+import { AppAuthGuard } from './service/AppAuthGuard';
 
 
 const routes: Routes = [
   {
     path: 'user_profile',
-    component: UserProfileComponent
+    canActivate: [AppAuthGuard],
+    component: UserProfileComponent,
+    data: { roles: ['client'] }
   },
+  //TODO: admin panel
   {
     path: 'payment',
-    component: PaymentComponent
+    canActivate: [AppAuthGuard],
+    component: PaymentComponent,
+    data: { roles: ['client'] }
   }, {
     path: 'replenish',
-    component: ReplenishComponent
+    canActivate: [AppAuthGuard],
+    component: ReplenishComponent,
+    data: { roles: ['client'] }
+  },
+  {
+    path: '',
+    canActivate: [AppAuthGuard],
+    component: AppComponent
   }
 ];
 

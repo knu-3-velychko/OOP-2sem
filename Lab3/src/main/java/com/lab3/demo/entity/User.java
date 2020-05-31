@@ -13,7 +13,7 @@ public class User {
     @Id
     @GeneratedValue(generator = "users_id_seq", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "users_id_seq", sequenceName = "users_id_seq", allocationSize = 5)
-    @Column(name="id",updatable = false)
+    @Column(name = "id", updatable = false)
     private Integer id;
     @Column(name = "email")
     private String email;
@@ -21,8 +21,4 @@ public class User {
     private String name;
     @Column(name = "surname")
     private String surname;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "role")
-    private Role role;
 }

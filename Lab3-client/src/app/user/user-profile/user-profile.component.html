@@ -3,9 +3,9 @@
     <div fxLayout="column" fxLayoutGap="1rem">
         <mat-card id="profile-card">
             <mat-card-content fxLayout="column" fxLayoutAlign="space-around">
-                <h3>Email: [email]</h3>
-                <h3>Name: [name]</h3>
-                <h3>Surname: [surname]</h3>
+                <h3>Email: {{(userData|async)?.email}}</h3>
+                <h3>Name: {{(userData|async)?.firstName}}</h3>
+                <h3>Surname: {{(userData|async)?.lastName}}</h3>
             </mat-card-content>
         </mat-card>
 

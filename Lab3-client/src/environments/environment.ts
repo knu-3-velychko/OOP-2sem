@@ -2,18 +2,23 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { KeycloakConfig } from 'keycloak-angular';
+
+let keycloakConfig: KeycloakConfig = {
+  url: 'http://localhost:8080/auth',
+  realm: 'Lab-3',
+  clientId: 'Lab3-frontend',
+  "credentials": {
+    "secret": "540a7e1f-6380-4bce-bb10-abf004c2fff0"
+  }
+}
+
+
 export const environment = {
   production: true,
   envName: 'local',
-  keycloak: {
-    issuer: 'http://localhost:8080/auth/',
-    redirectUri: 'http://localhost:4200/',
-    realm: 'Lab3_server',
-    clientId: 'Lab3_client',
-    requireHttps: false,
-    showDebugInformation: true,
-    disableAtHashCheck: true
-  }
+  keycloak: keycloakConfig,
+  registerService: 'http://localhost:8080/registration'
 };
 
 /*

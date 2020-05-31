@@ -1,3 +1,4 @@
+import { AppAuthGuard } from './service/AppAuthGuard';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
@@ -15,9 +16,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatListModule } from '@angular/material/list';
 
-import { initializer } from 'src/utils/app-init';
-import { LoginComponent } from './login/login.component';
-import { StartComponent } from './start/start.component';
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { PaymentComponent } from './user/payment/payment.component';
 import { ReplenishComponent } from './user/replenish/replenish.component';
@@ -25,12 +23,11 @@ import { AdminProfileComponent } from './admin/admin-profile/admin-profile.compo
 import { ManageCardsComponent } from './admin/manage-cards/manage-cards.component';
 import { CardsComponent } from './user/cards/cards.component';
 import { RegisterComponent } from './register/register.component';
+import { initializer } from 'src/utils/app-init';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    StartComponent,
     UserProfileComponent,
     PaymentComponent,
     ReplenishComponent,
@@ -51,17 +48,21 @@ import { RegisterComponent } from './register/register.component';
     MatPaginatorModule,
     FlexModule,
     FlexLayoutModule,
-    RouterModule
+    RouterModule,
   ],
-  // providers: [
-  //   {
-  //     provide: APP_INITIALIZER,
-  //     useFactory: initializer,
-  //     deps: [KeycloakService],
-  //     multi: true
-  //   }
-  // ],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializer,
+      deps: [KeycloakService],
+      multi: true
+    },
+    {
+      provide:AppAuthGuard
+    }
+  ],
+  bootstrap: [AppComponent],
+  // entryComponents: [AppComponent]
 })
 
 export class AppModule { }

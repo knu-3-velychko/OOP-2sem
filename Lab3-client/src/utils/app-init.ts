@@ -7,7 +7,7 @@ export function initializer(keycloak: KeycloakService) {
             try {
                 await keycloak.init({
                     config: {
-                        url: environment.keycloak.issuer,
+                        url: environment.keycloak.url,
                         realm: environment.keycloak.realm,
                         clientId: environment.keycloak.clientId
                     }
