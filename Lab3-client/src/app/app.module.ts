@@ -28,12 +28,13 @@ import { RegisterComponent } from './register/register.component';
 import { initializer } from 'src/utils/app-init';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { CardComponent } from './card/card.component';
 import { CardListComponent } from './user/card-list/card-list.component';
 import { CardDialogComponent } from './user/card-dialog/card-dialog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentSubmittedComponent } from './user/payment-submitted/payment-submitted.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AdminCardComponent } from './admin/admin-card/admin-card.component';
+import { CardComponent } from './user/card/card.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CardComponent,
     CardListComponent,
     CardDialogComponent,
-    PaymentSubmittedComponent
+    PaymentSubmittedComponent,
+    AdminCardComponent
   ],
   imports: [
     BrowserModule,
@@ -88,8 +90,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
       multi: true
     }
   ],
-  bootstrap: [AppComponent],
-  // entryComponents: [AppComponent]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }

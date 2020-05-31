@@ -1,6 +1,6 @@
-import { BlockService } from './../service/block/block.service';
+import { BlockService } from '../../service/block/block.service';
 import { Component, OnInit, Input } from '@angular/core';
-import { Card } from '../models/card.model';
+import { Card } from '../../models/card.model';
 
 @Component({
   selector: 'app-card',

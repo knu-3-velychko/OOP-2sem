@@ -98,9 +98,9 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
                 .authorizeRequests()
 
                 .antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/users").hasRole("admin")
+                .antMatchers(HttpMethod.GET, "/user").hasRole("ADMIN")
                 .antMatchers(HttpMethod.PATCH, "/block/**").permitAll()
-                .antMatchers(HttpMethod.DELETE, "/block/**").hasRole("admin")
+                .antMatchers(HttpMethod.DELETE, "/block/**").hasRole("ADMIN")
                 .antMatchers(HttpMethod.POST, "/card/**").permitAll()
                 .antMatchers(HttpMethod.POST, "/registration").permitAll()
                 .and()

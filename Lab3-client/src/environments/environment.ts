@@ -1,3 +1,4 @@
+import { UserService } from 'src/app/service/userService/user.service';
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
@@ -23,7 +24,8 @@ export const environment = {
   cardService: 'http://localhost:8180/card',
   blockService: 'http://localhost:8180/block/',
   paymentService: 'http://localhost:8180/payment',
-  replenishService: 'http://localhost:8180/replenish'
+  replenishService: 'http://localhost:8180/replenish',
+  userService: 'http://localhost:8180/user/'
 };
 
 /*

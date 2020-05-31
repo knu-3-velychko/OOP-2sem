@@ -1,3 +1,4 @@
+import { ManageCardsComponent } from './admin/manage-cards/manage-cards.component';
 import { AdminProfileComponent } from './admin/admin-profile/admin-profile.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
@@ -38,6 +39,12 @@ const routes: Routes = [
     canActivate: [AppAuthGuard],
     component: PaymentSubmittedComponent,
     data: { roles: ['client'] }
+  },
+  {
+    path: 'manage_cards',
+    canActivate: [AppAuthGuard],
+    component: ManageCardsComponent,
+    data: { roles: ['admin'] }
   },
   {
     path: '',

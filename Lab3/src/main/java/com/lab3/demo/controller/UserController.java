@@ -5,6 +5,7 @@ import com.lab3.demo.service.UserControllerService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -15,8 +16,8 @@ import java.util.List;
 public class UserController {
     private final UserControllerService userService;
 
-    @GetMapping(value = "/users")
-    public List<UserDTO> findUsers() {
-        return userService.findAll();
+    @GetMapping(value = "/user/{email}")
+    public List<UserDTO> findUsers(@PathVariable String email) {
+        return userService.findByEmail(email);
     }
 }
