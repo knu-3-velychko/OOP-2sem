@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038a699e-c9cb-4700-98c7-465e598414d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/exception/CardAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/exception/UserNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card-list/card-list.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card-list/card-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card-list/card-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card-list/card-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/card/card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/card/card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/navigation/navigation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/registration/registration.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/registration/registration.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/controller/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/converter/CardConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/converter/CardConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/dto/CardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/dto/CardDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/CardControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/CardControllerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/CardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +73,7 @@
       <updated>1590778525074</updated>
       <workItem from="1590778529020" duration="452000" />
       <workItem from="1590780512044" duration="13756000" />
-      <workItem from="1590902276874" duration="12347000" />
+      <workItem from="1590902276874" duration="13670000" />
     </task>
     <servers />
   </component>
@@ -115,38 +96,38 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="490" y="155" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1590918505383" />
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1590925189510">
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1590925659526">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590925189510" />
-    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1590925189509">
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590925659526" />
+    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1590925659526">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590925189509" />
-    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1590925189509">
+    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590925659526" />
+    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1590925659525">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590925189509" />
-    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1590925189509">
+    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590925659525" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1590925659526">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590925189509" />
-    <state width="1326" height="227" key="GridCell.Tab.1.bottom" timestamp="1590925189503">
+    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590925659526" />
+    <state width="1326" height="227" key="GridCell.Tab.1.bottom" timestamp="1590925659507">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590925189503" />
-    <state width="1326" height="227" key="GridCell.Tab.1.center" timestamp="1590925189503">
+    <state width="1326" height="227" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590925659507" />
+    <state width="1326" height="227" key="GridCell.Tab.1.center" timestamp="1590925659507">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1590925189503" />
-    <state width="1326" height="227" key="GridCell.Tab.1.left" timestamp="1590925189503">
+    <state width="1326" height="227" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1590925659507" />
+    <state width="1326" height="227" key="GridCell.Tab.1.left" timestamp="1590925659507">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1590925189503" />
-    <state width="1326" height="227" key="GridCell.Tab.1.right" timestamp="1590925189503">
+    <state width="1326" height="227" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1590925659507" />
+    <state width="1326" height="227" key="GridCell.Tab.1.right" timestamp="1590925659507">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1590925189503" />
+    <state width="1326" height="227" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1590925659507" />
     <state width="1326" height="281" key="GridCell.Tab.2.bottom" timestamp="1590902172434">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
