@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { RegistrationService } from './../../service/registration/registration.service';
+import { RegistrationService } from '../../service/registrationService/registration.service';
 import { UserService } from './../../service/userService/user.service';
 import { KeycloakService } from 'keycloak-angular';
 import { Component, OnInit } from '@angular/core';

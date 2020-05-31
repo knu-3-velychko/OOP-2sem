@@ -17,6 +17,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { PaymentComponent } from './user/payment/payment.component';
@@ -28,7 +29,9 @@ import { initializer } from 'src/utils/app-init';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './card/card.component';
-import { CardListComponent } from './card-list/card-list.component';
+import { CardListComponent } from './user/card-list/card-list.component';
+import { CardDialogComponent } from './user/card-dialog/card-dialog.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import { CardListComponent } from './card-list/card-list.component';
     RegisterComponent,
     NavigationComponent,
     CardComponent,
-    CardListComponent
+    CardListComponent,
+    CardDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +60,9 @@ import { CardListComponent } from './card-list/card-list.component';
     MatListModule,
     MatToolbarModule,
     MatIconModule,
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
     FlexModule,
     FlexLayoutModule,
     RouterModule,

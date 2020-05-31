@@ -1,24 +1,27 @@
 export interface Card {
     cardNumber: string;
     balance: number;
-    blocked: boolean
+    blocked: boolean;
+    userEmail: string;
 }
 
 export function getEmptyCard(): Card {
     const card: Card = {
         cardNumber: null,
-        balance: null,
-        blocked: null
+        balance: 0,
+        blocked: false,
+        userEmail: null
     }
 
     return card;
 }
 
-export function getCard(cardNumber: string, balance: number, blocked: boolean): Card {
+export function getCard(cardNumber: string, balance: number, blocked: boolean, userEmail: string): Card {
     const card: Card = {
         cardNumber: cardNumber,
         balance: balance,
-        blocked: blocked
+        blocked: blocked,
+        userEmail: userEmail
     }
 
     return card;

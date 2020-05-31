@@ -13,8 +13,8 @@ import java.util.List;
 public class CardController {
     private final CardControllerService cardService;
 
-    @GetMapping(value = "/cards/{email}")
-    public List<CardDTO> findByUser(@PathVariable("email") String email) {
+    @GetMapping(value = "/card")
+    public List<CardDTO> findByUser(@RequestParam String email) {
         return cardService.findByUser(email);
     }
 

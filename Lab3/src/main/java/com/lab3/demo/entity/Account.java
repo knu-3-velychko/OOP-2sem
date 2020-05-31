@@ -1,5 +1,6 @@
 package com.lab3.demo.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Table(name = "accounts")
 @NoArgsConstructor
+@AllArgsConstructor
 public class Account {
     @Id
     @GeneratedValue(generator = "accounts_id_seq", strategy = GenerationType.SEQUENCE)

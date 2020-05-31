@@ -2,6 +2,7 @@ package com.lab3.demo.service.data;
 
 import com.lab3.demo.entity.Account;
 import com.lab3.demo.entity.Card;
+import com.lab3.demo.exception.CardAlreadyExists;
 import com.lab3.demo.exception.CardNotFoundException;
 import com.lab3.demo.exception.CardStateException;
 import com.lab3.demo.repository.AccountRepository;
@@ -26,6 +27,10 @@ public class CardService {
 
     @Transactional
     public Card addCard(Card card) {
+        Optional<Card> oldCard = cardRepository.findById(card.getId());
+        if (oldCard.isPresent()) {
+            throw new CardAlreadyExists("Card with id " + card.getId() + " alredy exists");
+        }
         accountRepository.save(card.getAccount());
         return cardRepository.save(card);
     }

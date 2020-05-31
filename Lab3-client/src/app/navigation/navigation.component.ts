@@ -1,9 +1,9 @@
-import { RegistrationService } from './../service/registration/registration.service';
 import { UserService } from './../service/userService/user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user.model';
 import { KeycloakService } from 'keycloak-angular';
+import { RegistrationService } from '../service/registrationService/registration.service';
 
 @Component({
   selector: 'app-navigation',

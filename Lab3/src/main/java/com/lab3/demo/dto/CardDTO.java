@@ -18,4 +18,7 @@ public class CardDTO {
 
     @NotNull(message = "Block state is required")
     private boolean blocked;
+
+    @NotNull(message = "User is required")
+    private String userEmail;
 }

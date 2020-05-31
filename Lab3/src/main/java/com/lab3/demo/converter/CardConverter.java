@@ -15,6 +15,7 @@ public class CardConverter {
         cardDTO.setCardNumber(card.getId());
         cardDTO.setBalance(card.getAccount().getBalance());
         cardDTO.setBlocked(card.getAccount().isBlocked());
+        cardDTO.setUserEmail(card.getUser().getEmail());
 
         return cardDTO;
     }
