@@ -21,7 +21,9 @@ export const environment = {
   registerService: 'http://localhost:8180/registration',
   logoutService: 'http://localhost:8180/sso/logout',
   cardService: 'http://localhost:8180/card',
-  blockService: 'http://localhost:8180/block/'
+  blockService: 'http://localhost:8180/block/',
+  paymentService: 'http://localhost:8180/payment',
+  replenishService: 'http://localhost:8180/replenish'
 };
 
 /*

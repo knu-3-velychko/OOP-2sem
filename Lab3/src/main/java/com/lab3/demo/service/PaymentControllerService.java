@@ -18,4 +18,8 @@ public class PaymentControllerService {
     public CardDTO addPayment(PaymentDTO paymentDTO) {
         return cardConverter.convertToDTO(paymentService.addPayment(paymentDTO));
     }
+
+    public CardDTO replenishAccount(PaymentDTO paymentDTO) {
+        return cardConverter.convertToDTO(paymentService.replenishAccount(paymentDTO));
+    }
 }

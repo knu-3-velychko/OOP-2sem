@@ -1,12 +1,10 @@
-import { Card } from './card.model';
-
 export interface Payment {
-    cardFrom: Card;
-    cardTo: Card;
+    cardFrom: string;
+    cardTo: string;
     amount: number;
 }
 
-export function getPayment(cardFrom: Card, cardTo: Card, amount: number): Payment {
+export function getPayment(cardFrom: string, cardTo: string, amount: number): Payment {
     const payment: Payment = {
         cardFrom: cardFrom,
         cardTo: cardTo,

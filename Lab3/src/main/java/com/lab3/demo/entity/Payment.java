@@ -12,12 +12,12 @@ import javax.persistence.*;
 public class Payment {
     @Id
     @GeneratedValue(generator = "payments_id_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "payments_id_seq", sequenceName = "payments_id_seq", allocationSize = 5)
+    @SequenceGenerator(name = "payments_id_seq", sequenceName = "payments_id_seq", allocationSize = 1)
     @Column(name = "id", updatable = false)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "card_from", updatable = false, nullable = false)
+    @JoinColumn(name = "card_from", updatable = false)
     private Card from;
 
     @ManyToOne

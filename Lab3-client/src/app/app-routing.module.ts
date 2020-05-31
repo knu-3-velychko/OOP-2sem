@@ -6,6 +6,7 @@ import { UserProfileComponent } from './user/user-profile/user-profile.component
 import { PaymentComponent } from './user/payment/payment.component';
 import { ReplenishComponent } from './user/replenish/replenish.component';
 import { AppAuthGuard } from './service/AppAuthGuard';
+import { PaymentSubmittedComponent } from './user/payment-submitted/payment-submitted.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,12 @@ const routes: Routes = [
     path: 'replenish',
     canActivate: [AppAuthGuard],
     component: ReplenishComponent,
+    data: { roles: ['client'] }
+  },
+  {
+    path: 'submitted',
+    canActivate: [AppAuthGuard],
+    component: PaymentSubmittedComponent,
     data: { roles: ['client'] }
   },
   {

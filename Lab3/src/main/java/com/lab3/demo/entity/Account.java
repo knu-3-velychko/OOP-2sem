@@ -16,7 +16,7 @@ import javax.validation.constraints.NotBlank;
 public class Account {
     @Id
     @GeneratedValue(generator = "accounts_id_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "accounts_id_seq", sequenceName = "accounts_id_seq", allocationSize = 5)
+    @SequenceGenerator(name = "accounts_id_seq", sequenceName = "accounts_id_seq", allocationSize = 1)
     @Column(name = "id", updatable = false)
     private Integer id;
 

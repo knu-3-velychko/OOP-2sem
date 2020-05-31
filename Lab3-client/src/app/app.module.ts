@@ -32,6 +32,8 @@ import { CardComponent } from './card/card.component';
 import { CardListComponent } from './user/card-list/card-list.component';
 import { CardDialogComponent } from './user/card-dialog/card-dialog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PaymentSubmittedComponent } from './user/payment-submitted/payment-submitted.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavigationComponent,
     CardComponent,
     CardListComponent,
-    CardDialogComponent
+    CardDialogComponent,
+    PaymentSubmittedComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     MatDialogModule,
+    MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
     FlexModule,

@@ -5,3 +5,7 @@
 .cards {
     width: 50%;
 }
+
+.card {
+    margin: 1em !important;
+}
