@@ -1,3 +1,4 @@
+import { UserService } from './service/userService/user.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { KeycloakService } from 'keycloak-angular';

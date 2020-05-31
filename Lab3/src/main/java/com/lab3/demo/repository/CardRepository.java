@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CardRepository extends JpaRepository<Card, String> {
-    List<Card> findByUser(String email);
+    List<Card> findByUserEmail(String email);
 
     Optional<Card> findById(String id);
 }

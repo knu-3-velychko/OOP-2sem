@@ -14,16 +14,10 @@
             <column name="email" type="VARCHAR(255)">
                 <constraints unique="true" nullable="false"/>
             </column>
-            <column name="password" type="VARCHAR(255)">
-                <constraints nullable="false"/>
-            </column>
             <column name="name" type="VARCHAR(50)" defaultValue="John">
                 <constraints nullable="false"/>
             </column>
             <column name="surname" type="VARCHAR(50)"/>
-            <column name="role" type="role_type" defaultValue="USER">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
 
         <createTable tableName="accounts">

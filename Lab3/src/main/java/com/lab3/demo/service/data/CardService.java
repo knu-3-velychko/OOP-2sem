@@ -7,6 +7,7 @@ import com.lab3.demo.exception.CardStateException;
 import com.lab3.demo.repository.AccountRepository;
 import com.lab3.demo.repository.CardRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,13 +15,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class CardService {
-    private CardRepository cardRepository;
-    private AccountRepository accountRepository;
+    private final CardRepository cardRepository;
+    private final AccountRepository accountRepository;
 
     public List<Card> findByUser(String email) {
-        return cardRepository.findByUser(email);
+        return cardRepository.findByUserEmail(email);
     }
 
     @Transactional

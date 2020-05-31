@@ -6,16 +6,17 @@ import com.lab3.demo.entity.Card;
 import com.lab3.demo.exception.CardNumberNotNullException;
 import com.lab3.demo.service.data.CardService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class CardControllerService {
-    private CardService cardService;
+    private final CardService cardService;
 
-    private CardConverter cardConverter;
+    private final CardConverter cardConverter;
 
     public CardDTO addCard(CardDTO cardDTO) {
         Card card = this.cardService.addCard(cardConverter.convertToEntity(cardDTO));

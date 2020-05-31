@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 @Data
 @Entity
+@Table(name = "accounts")
 @NoArgsConstructor
 public class Account {
     @Id

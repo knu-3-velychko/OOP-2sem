@@ -2,21 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038a699e-c9cb-4700-98c7-465e598414d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab3-client/keycloak/keycloak.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/registration/registration.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/registration/registration.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/utils/app-init.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/utils/app-init.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3-client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/Role.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/repository/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/CardControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/CardControllerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/PaymentControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/PaymentControllerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/RegistrationControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/RegistrationControllerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/UserControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/UserControllerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/keycloak.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/keycloak.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +68,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Lab3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -83,7 +96,7 @@
       <updated>1590778525074</updated>
       <workItem from="1590778529020" duration="452000" />
       <workItem from="1590780512044" duration="13756000" />
-      <workItem from="1590902276874" duration="1262000" />
+      <workItem from="1590902276874" duration="8028000" />
     </task>
     <servers />
   </component>
@@ -102,38 +115,42 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="140" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1590793873034" />
-    <state width="663" height="227" key="GridCell.Tab.0.bottom" timestamp="1590902374091">
+    <state x="490" y="155" key="#com.intellij.ide.util.MemberChooser" timestamp="1590918505383">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590902374091" />
-    <state width="663" height="227" key="GridCell.Tab.0.center" timestamp="1590902374091">
+    <state x="490" y="155" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1590918505383" />
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1590915823518">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590902374091" />
-    <state width="663" height="227" key="GridCell.Tab.0.left" timestamp="1590902374091">
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590915823518" />
+    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1590915823518">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590902374091" />
-    <state width="663" height="227" key="GridCell.Tab.0.right" timestamp="1590902374091">
+    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590915823518" />
+    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1590915823518">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590902374091" />
-    <state width="663" height="227" key="GridCell.Tab.1.bottom" timestamp="1590902374092">
+    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590915823518" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1590915823518">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590902374092" />
-    <state width="663" height="227" key="GridCell.Tab.1.center" timestamp="1590902374092">
+    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590915823518" />
+    <state width="1326" height="227" key="GridCell.Tab.1.bottom" timestamp="1590915823514">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1590902374092" />
-    <state width="663" height="227" key="GridCell.Tab.1.left" timestamp="1590902374092">
+    <state width="1326" height="227" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590915823514" />
+    <state width="1326" height="227" key="GridCell.Tab.1.center" timestamp="1590915823513">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1590902374092" />
-    <state width="663" height="227" key="GridCell.Tab.1.right" timestamp="1590902374092">
+    <state width="1326" height="227" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1590915823513" />
+    <state width="1326" height="227" key="GridCell.Tab.1.left" timestamp="1590915823513">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="663" height="227" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1590902374092" />
+    <state width="1326" height="227" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1590915823513" />
+    <state width="1326" height="227" key="GridCell.Tab.1.right" timestamp="1590915823513">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="227" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1590915823513" />
     <state width="1326" height="281" key="GridCell.Tab.2.bottom" timestamp="1590902172434">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -150,10 +167,14 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state width="1326" height="281" key="GridCell.Tab.2.right/0.0.1368.872@0.0.1368.872" timestamp="1590902172434" />
-    <state x="165" y="13" key="SettingsEditor" timestamp="1590788095878">
+    <state x="165" y="13" key="SettingsEditor" timestamp="1590915063077">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="165" y="13" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1590788095878" />
+    <state x="165" y="13" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1590915063077" />
+    <state x="507" y="214" width="308" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1590914415559">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="507" y="214" width="308" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1368.872@0.0.1368.872" timestamp="1590914415559" />
     <state x="265" y="94" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590791281522">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -162,5 +183,9 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="0" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1368.872@0.0.1368.872" timestamp="1590790137836" />
+    <state x="396" y="186" width="575" height="498" key="find.popup" timestamp="1590914044017">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="396" y="186" width="575" height="498" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1590914044017" />
   </component>
 </project>

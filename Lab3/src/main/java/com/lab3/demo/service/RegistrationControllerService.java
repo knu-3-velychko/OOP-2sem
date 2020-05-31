@@ -5,11 +5,12 @@ import com.lab3.demo.dto.UserDTO;
 import com.lab3.demo.entity.User;
 import com.lab3.demo.service.data.RegistrationService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class RegistrationControllerService {
     private final UserConverter userConverter;
     private final RegistrationService registrationService;

@@ -8,18 +8,19 @@ import com.lab3.demo.exception.OutOfAccountBalance;
 import com.lab3.demo.repository.CardRepository;
 import com.lab3.demo.repository.PaymentRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class PaymentService {
-    private PaymentRepository paymentRepository;
-    private PaymentConverter paymentConverter;
+    private final PaymentRepository paymentRepository;
+    private final PaymentConverter paymentConverter;
 
-    private CardRepository cardRepository;
+    private final CardRepository cardRepository;
 
     @Transactional
     public Card addPayment(PaymentDTO paymentDTO) {

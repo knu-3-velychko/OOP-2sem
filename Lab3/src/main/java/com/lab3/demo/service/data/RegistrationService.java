@@ -4,22 +4,20 @@ import com.lab3.demo.entity.User;
 import com.lab3.demo.exception.UserAlreadyExistsException;
 import com.lab3.demo.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class RegistrationService {
     private final UserRepository userRepository;
 
     @Transactional
     public User save(User currentUser) {
         Optional<User> oldUser = userRepository.findByEmail(currentUser.getEmail());
-        oldUser.ifPresent(entity -> {
-            throw new UserAlreadyExistsException("User already exist.");
-        });
-        return userRepository.save(currentUser);
+        return oldUser.orElseGet(() -> userRepository.save(currentUser));
     }
 }

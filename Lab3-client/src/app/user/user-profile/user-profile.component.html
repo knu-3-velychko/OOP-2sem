@@ -4,21 +4,21 @@
         <mat-card id="profile-card">
             <mat-card-content fxLayout="column" fxLayoutAlign="space-around">
                 <h3>Email: {{(userData|async)?.email}}</h3>
-                <h3>Name: {{(userData|async)?.firstName}}</h3>
-                <h3>Surname: {{(userData|async)?.lastName}}</h3>
+                <h3>Name: {{(userData|async)?.name}}</h3>
+                <h3>Surname: {{(userData|async)?.surname}}</h3>
             </mat-card-content>
         </mat-card>
 
-        <mat-card>
+        <mat-card fxLayout="row" fxLayoutAlign="center">
             <button mat-raised-button color="accent" (click)="makePayment()">Make payment</button>
         </mat-card>
-        <mat-card>
+        <mat-card fxLayout="row" fxLayoutAlign="center">
             <button mat-raised-button color="accent" (click)="replenish()">Replenish account</button>
         </mat-card>
     </div>
 
     <mat-card class="cards">
-
+        <app-card-list></app-card-list>
     </mat-card>
 
 </div>

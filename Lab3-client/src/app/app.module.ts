@@ -6,7 +6,7 @@ import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { KeycloakAngularModule, KeycloakService, KeycloakBearerInterceptor } from 'keycloak-angular';
 import { FlexModule, FlexLayoutModule } from "@angular/flex-layout";
 
 import { MatCardModule } from '@angular/material/card';
@@ -15,15 +15,20 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { PaymentComponent } from './user/payment/payment.component';
 import { ReplenishComponent } from './user/replenish/replenish.component';
 import { AdminProfileComponent } from './admin/admin-profile/admin-profile.component';
 import { ManageCardsComponent } from './admin/manage-cards/manage-cards.component';
-import { CardsComponent } from './user/cards/cards.component';
 import { RegisterComponent } from './register/register.component';
 import { initializer } from 'src/utils/app-init';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './card/card.component';
+import { CardListComponent } from './card-list/card-list.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +38,10 @@ import { initializer } from 'src/utils/app-init';
     ReplenishComponent,
     AdminProfileComponent,
     ManageCardsComponent,
-    CardsComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavigationComponent,
+    CardComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +53,13 @@ import { initializer } from 'src/utils/app-init';
     MatInputModule,
     MatSelectModule,
     MatPaginatorModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule,
     FlexModule,
     FlexLayoutModule,
     RouterModule,
+    HttpClientModule
   ],
   providers: [
     {
@@ -58,7 +69,12 @@ import { initializer } from 'src/utils/app-init';
       multi: true
     },
     {
-      provide:AppAuthGuard
+      provide: AppAuthGuard
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: KeycloakBearerInterceptor,
+      multi: true
     }
   ],
   bootstrap: [AppComponent],

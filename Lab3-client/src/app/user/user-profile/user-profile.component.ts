@@ -1,9 +1,11 @@
+import { Observable } from 'rxjs';
+import { RegistrationService } from './../../service/registration/registration.service';
 import { UserService } from './../../service/userService/user.service';
 import { KeycloakService } from 'keycloak-angular';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { KeycloakProfile } from 'keycloak-js';
-import { getUser } from 'src/app/models/user.model';
+import { getUser, User } from 'src/app/models/user.model';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-user-profile',
@@ -11,18 +13,32 @@ import { getUser } from 'src/app/models/user.model';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-  userData: Promise<KeycloakProfile>;
+  userData: Observable<User>;
 
   constructor(private router: Router,
     private keycloakAngular: KeycloakService,
-    private userService: UserService) { }
+    private userService: UserService,
+    private registrationService: RegistrationService) { }
 
   ngOnInit(): void {
     try {
-      this.keycloakAngular.loadUserProfile().then(
+      this.keycloakAngular.loadUserProfile(true).then(
         data => {
+          console.log("here");
           const user = getUser(Number(data.id), data.email, data.firstName, data.lastName);
-          this.userService.setCurrentUsr(user);
+          this.userData = this.registrationService.registerUser(user).pipe(
+            map(_ => {
+              this.userService.setCurrentUsr(user);
+              return user;
+            },
+              err => {
+                console.log(err);
+                alert(err.message);
+              }),
+          )
+        },
+        reason => {
+          console.log(reason);
         }
       );
     } catch (e) {

@@ -8,6 +8,7 @@ import java.util.List;
 
 @Data
 @Entity
+@Table(name = "cards")
 @NoArgsConstructor
 public class Card {
     @Id
@@ -18,6 +19,6 @@ public class Card {
     private User user;
 
     @OneToOne
-    @JoinColumn(name = "account_id",updatable = false,nullable = false)
+    @JoinColumn(name = "account_id", updatable = false, nullable = false)
     private Account account;
 }

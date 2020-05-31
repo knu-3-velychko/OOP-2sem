@@ -1,3 +1,4 @@
+import { AdminProfileComponent } from './admin/admin-profile/admin-profile.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,7 +15,12 @@ const routes: Routes = [
     component: UserProfileComponent,
     data: { roles: ['client'] }
   },
-  //TODO: admin panel
+  {
+    path: 'admin_profile',
+    canActivate: [AppAuthGuard],
+    component: AdminProfileComponent,
+    data: { roles: ['admin'] }
+  },
   {
     path: 'payment',
     canActivate: [AppAuthGuard],

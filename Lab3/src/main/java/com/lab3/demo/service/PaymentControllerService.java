@@ -6,13 +6,14 @@ import com.lab3.demo.dto.CardDTO;
 import com.lab3.demo.dto.PaymentDTO;
 import com.lab3.demo.service.data.PaymentService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class PaymentControllerService {
-    private PaymentService paymentService;
-    private CardConverter cardConverter;
+    private final PaymentService paymentService;
+    private final CardConverter cardConverter;
 
     public CardDTO addPayment(PaymentDTO paymentDTO) {
         return cardConverter.convertToDTO(paymentService.addPayment(paymentDTO));
