@@ -1,13 +1,11 @@
 package com.lab3.demo.service.data;
 
-import com.lab3.demo.entity.Account;
 import com.lab3.demo.entity.Card;
 import com.lab3.demo.exception.CardAlreadyExists;
 import com.lab3.demo.exception.CardNotFoundException;
 import com.lab3.demo.exception.CardStateException;
 import com.lab3.demo.repository.AccountRepository;
 import com.lab3.demo.repository.CardRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,7 +27,7 @@ public class CardService {
     public Card addCard(Card card) {
         Optional<Card> oldCard = cardRepository.findById(card.getId());
         if (oldCard.isPresent()) {
-            throw new CardAlreadyExists("Card with id " + card.getId() + " alredy exists");
+            throw new CardAlreadyExists("Card with id " + card.getId() + " already exists");
         }
         accountRepository.save(card.getAccount());
         return cardRepository.save(card);
@@ -60,7 +58,7 @@ public class CardService {
     }
 
     @Transactional
-    public Card replenishAccount(String cardNumber, int amount) {
+    public void replenishAccount(String cardNumber, int amount) {
         Optional<Card> card = cardRepository.findById(cardNumber);
         Card c = card.orElseThrow(() -> new CardNotFoundException("Card with number " + cardNumber + " not found."));
         if (c.getAccount().isBlocked()) {
@@ -69,7 +67,7 @@ public class CardService {
 
         int currentBalance = c.getAccount().getBalance();
         c.getAccount().setBalance(currentBalance + amount);
-        return cardRepository.findById(cardNumber).orElseThrow(() -> new CardNotFoundException("Card with number " + cardNumber + " not found."));
+        cardRepository.findById(cardNumber).orElseThrow(() -> new CardNotFoundException("Card with number " + cardNumber + " not found."));
     }
 
 }

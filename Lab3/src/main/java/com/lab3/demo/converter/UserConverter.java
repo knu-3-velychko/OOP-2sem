@@ -25,10 +25,4 @@ public class UserConverter {
         user.setSurname(userDTO.getSurname());
         return user;
     }
-
-    public List<UserDTO> convertToListDto(List<User> users) {
-        return users.stream().
-                map(this::convertToDto)
-                .collect(Collectors.toList());
-    }
 }

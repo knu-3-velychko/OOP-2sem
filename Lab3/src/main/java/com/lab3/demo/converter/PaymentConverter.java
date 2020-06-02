@@ -30,10 +30,4 @@ public class PaymentConverter {
 
         return payment;
     }
-
-    public List<PaymentDTO> convertToListDto(List<Payment> payments) {
-        return payments.stream().
-                map(this::convertToDto)
-                .collect(Collectors.toList());
-    }
 }
