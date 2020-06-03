@@ -59,7 +59,7 @@ public class WebSocketServer {
 
     private WebSocketSession findSession(Session session) {
         for (WebSocketSession webSocketSession : sessions) {
-            if (webSocketSession.session == session) {
+            if (webSocketSession.getSession() == session) {
                 return webSocketSession;
             }
         }

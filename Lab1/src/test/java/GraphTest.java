@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,20 +15,20 @@ public class GraphTest {
     private final List<Vertex> vertexList = Arrays.asList(vertexFrom, vertexTo);
     private final List<Edge> edgeList = Arrays.asList(edge);
 
-    private final Graph defaultGraph = new Graph();
+    private final Graph defaultGraph = new Graph(Paths.get("C:\\Users\\Taya\\Documents\\Projects\\OOP-2sem\\lab1\\src\\main\\resources\\graph.json"));
     private final Graph filledGraph = new Graph(vertexList, edgeList);
 
 
     @Test
     public void getVertexes() {
-        assertNotNull(this.defaultGraph.getVertexes());
-        assertFalse(this.defaultGraph.getVertexes().isEmpty());
+        assertNotNull(this.defaultGraph.getVertices());
+        assertFalse(this.defaultGraph.getVertices().isEmpty());
 
-        assertNotNull(this.filledGraph.getVertexes());
-        assertFalse(this.filledGraph.getVertexes().isEmpty());
-        assertEquals(vertexList.size(), filledGraph.getVertexes().size());
-        assertEquals(vertexFrom, filledGraph.getVertexes().get(0));
-        assertEquals(vertexTo, filledGraph.getVertexes().get(1));
+        assertNotNull(this.filledGraph.getVertices());
+        assertFalse(this.filledGraph.getVertices().isEmpty());
+        assertEquals(vertexList.size(), filledGraph.getVertices().size());
+        assertEquals(vertexFrom, filledGraph.getVertices().get(0));
+        assertEquals(vertexTo, filledGraph.getVertices().get(1));
     }
 
     @Test
