@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038a699e-c9cb-4700-98c7-465e598414d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/converter/CardConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/converter/PaymentConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/converter/UserConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/service/data/CardServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/service/data/PaymentServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/service/data/RegistrationServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lab3/demo/service/data/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-card/admin-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-card/admin-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-profile/admin-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-profile/admin-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/admin/manage-cards/manage-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/admin/manage-cards/manage-cards.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/models/card.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/models/card.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/models/payment.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/models/payment.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/navigation/navigation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/AppAuthGuard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/AppAuthGuard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/block/block.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/block/block.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/cardService/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/cardService/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/paymentService/payment.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/paymentService/payment.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/registrationService/registration.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/registrationService/registration.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/userService/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/userService/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-dialog/card-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-dialog/card-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-list/card-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-list/card-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment-submitted/payment-submitted.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment-submitted/payment-submitted.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment/payment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment/payment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/replenish/replenish.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/replenish/replenish.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/converter/PaymentConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/converter/PaymentConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/converter/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/converter/UserConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab3/demo/service/data/CardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

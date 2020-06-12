@@ -6,23 +6,19 @@ export interface User {
 }
 
 export function getEmptyUser(): User {
-    const user: User = {
+    return {
         id: null,
         email: null,
         name: null,
         surname: null
     };
-
-    return user;
 }
 
 export function getUser(id: number, email: string, name: string, surname: string) {
-    const user: User = {
-        id: id,
-        email: email,
-        name: name,
-        surname: surname
+    return {
+        id,
+        email,
+        name,
+        surname
     };
-
-    return user;
 }
