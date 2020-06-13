@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="038a699e-c9cb-4700-98c7-465e598414d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-card/admin-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-card/admin-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-profile/admin-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/admin/admin-profile/admin-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/admin/manage-cards/manage-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/admin/manage-cards/manage-cards.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/models/card.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/models/card.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/models/payment.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/models/payment.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/navigation/navigation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/AppAuthGuard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/AppAuthGuard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/block/block.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/block/block.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/cardService/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/cardService/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/paymentService/payment.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/paymentService/payment.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/registrationService/registration.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/registrationService/registration.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/service/userService/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/service/userService/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-dialog/card-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-dialog/card-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-list/card-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/card-list/card-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment-submitted/payment-submitted.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment-submitted/payment-submitted.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment/payment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/payment/payment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/replenish/replenish.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/replenish/replenish.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/app/user/user-profile/user-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3-client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3-client/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1catRZiTAig4vsTw7qfvc2GuhWu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lab3.demo.converter" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserConverterTest">
+    <configuration name="CardConverterTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab3.demo.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lab3.demo.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.lab3.demo.converter.CardConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab3.demo.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lab3.demo.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.lab3.demo.converter.CardConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardConverterTest.convertToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab3.demo.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lab3.demo.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.lab3.demo.converter.CardConverterTest" />
+      <option name="METHOD_NAME" value="convertToEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserConverterTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab3.demo.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lab3.demo.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.lab3.demo.converter.UserConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab3.demo.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lab3.demo.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.lab3.demo.converter.UserConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Lab3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lab3.demo.Lab3Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserConverterTest" />
+        <item itemvalue="JUnit.UserConverterTest (1)" />
+        <item itemvalue="JUnit.CardConverterTest.convertToEntity" />
+        <item itemvalue="JUnit.CardConverterTest" />
+        <item itemvalue="JUnit.CardConverterTest (3)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="038a699e-c9cb-4700-98c7-465e598414d3" name="Default Changelist" comment="" />
+      <created>1590778525074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590778525074</updated>
+      <workItem from="1590778529020" duration="452000" />
+      <workItem from="1590780512044" duration="13756000" />
+      <workItem from="1590902276874" duration="25668000" />
+      <workItem from="1591111588749" duration="11137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="554" y="326" key="#Assign_Data_Sources" timestamp="1590902947026">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="554" y="326" key="#Assign_Data_Sources/0.0.1368.872@0.0.1368.872" timestamp="1590902947026" />
+    <state x="140" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590950037250">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="140" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1590950037250" />
+    <state x="94" y="100" width="495" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591121835536">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="94" y="100" width="495" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1368.872@0.0.1368.872" timestamp="1591121835536" />
+    <state x="490" y="155" key="#com.intellij.ide.util.MemberChooser" timestamp="1590918505383">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="490" y="155" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1590918505383" />
+    <state x="479" y="316" width="409" height="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590930147038">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="479" y="316" width="409" height="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1590930147038" />
+    <state width="639" height="225" key="GridCell.Tab.0.bottom" timestamp="1591128799510">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="639" height="225" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1591128799510" />
+    <state width="639" height="225" key="GridCell.Tab.0.center" timestamp="1591128799509">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="639" height="225" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1591128799509" />
+    <state width="639" height="225" key="GridCell.Tab.0.left" timestamp="1591128799509">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="639" height="225" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1591128799509" />
+    <state width="639" height="225" key="GridCell.Tab.0.right" timestamp="1591128799509">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="639" height="225" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1591128799509" />
+    <state width="1326" height="226" key="GridCell.Tab.1.bottom" timestamp="1591008959973">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="226" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1591008959973" />
+    <state width="1326" height="226" key="GridCell.Tab.1.center" timestamp="1591008959973">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="226" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1591008959973" />
+    <state width="1326" height="226" key="GridCell.Tab.1.left" timestamp="1591008959973">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="226" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1591008959973" />
+    <state width="1326" height="226" key="GridCell.Tab.1.right" timestamp="1591008959973">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="226" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1591008959973" />
+    <state width="1326" height="281" key="GridCell.Tab.2.bottom" timestamp="1590902172434">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.2.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590902172434" />
+    <state width="1326" height="281" key="GridCell.Tab.2.center" timestamp="1590902172434">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.2.center/0.0.1368.872@0.0.1368.872" timestamp="1590902172434" />
+    <state width="1326" height="281" key="GridCell.Tab.2.left" timestamp="1590902172434">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.2.left/0.0.1368.872@0.0.1368.872" timestamp="1590902172434" />
+    <state width="1326" height="281" key="GridCell.Tab.2.right" timestamp="1590902172434">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.2.right/0.0.1368.872@0.0.1368.872" timestamp="1590902172434" />
+    <state x="165" y="13" key="SettingsEditor" timestamp="1590915063077">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="165" y="13" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1590915063077" />
+    <state x="507" y="214" width="308" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1590935734998">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="507" y="214" width="308" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1368.872@0.0.1368.872" timestamp="1590935734998" />
+    <state x="265" y="94" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590791281522">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="265" y="94" key="com.intellij.database.dbimport.ImportDialog/0.0.1368.872@0.0.1368.872" timestamp="1590791281522" />
+    <state x="0" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590790137836">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="0" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1368.872@0.0.1368.872" timestamp="1590790137836" />
+    <state x="114" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591129003680">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="114" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1591129003680" />
+    <state x="396" y="186" width="575" height="498" key="find.popup" timestamp="1590914044017">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="396" y="186" width="575" height="498" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1590914044017" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Lab3$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1591124210828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lab3.demo.service.data.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lab3$All_in_Lab3__1_.ic" NAME="All in Lab3 (1) Coverage Results" MODIFIED="1591124253242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Lab3$All_in_Lab3.ic" NAME="All in Lab3 Coverage Results" MODIFIED="1591121672530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

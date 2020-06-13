@@ -1,0 +1,17 @@
+<h1 matDialogTitle>Add card</h1>
+
+<mat-dialog-content>
+    <form>
+        <mat-form-field>
+            <mat-label>Card number</mat-label>
+            <input matInput [formControl]="cardNumber" placeholder="Enter card name" required>
+            <mat-error *ngIf="cardNumber.errors?.required">Card number cannot be empty.</mat-error>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button (click)="submit()" color="accent">Add</button>
+    <button mat-button matDialogClose>Close dialog</button>
+
+</mat-dialog-actions>

@@ -1,0 +1,8 @@
+{
+  "realm": "Lab-3",
+  "auth-server-url": "http://localhost:8080/auth/",
+  "ssl-required": "external",
+  "resource": "Lab3-frontend",
+  "public-client": true,
+  "confidential-port": 0
+}

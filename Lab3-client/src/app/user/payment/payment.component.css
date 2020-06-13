@@ -1,0 +1,15 @@
+.container {
+    margin: 3em 30%;
+}
+
+mat-card {
+    text-align: end;
+}
+
+.hidden {
+    display: none;
+}
+
+mat-form-field {
+    margin: 0.5em;
+}
