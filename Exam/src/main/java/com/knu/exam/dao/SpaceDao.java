@@ -15,7 +15,10 @@ public class SpaceDao {
         ResultSet results = statement.executeQuery();
 
         while (results.next()) {
-            System.out.println("Planet " + results.getString("name") + " has live!");
+            System.out.println("Planet " + results.getString("pname") + " has live!");
+            if (results.getString("sname") != null) {
+                System.out.println("\t\twith satelite " + results.getString("sname"));
+            }
         }
     }
 

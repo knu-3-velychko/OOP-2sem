@@ -1,6 +1,6 @@
-SELECT *
-FROM planets
-         LEFT JOIN satelites ON planets.id = satelites.planet_id
-         INNER JOIN galaxies ON planets.galaxy_id = galaxies.id
+SELECT p.name as pname, s.name as sname
+FROM planets p
+         LEFT JOIN satelites s ON p.id = s.planet_id
+         INNER JOIN galaxies g ON p.galaxy_id = g.id
 WHERE has_life = true
-  AND galaxies.name=?;
+  AND g.name=?;
