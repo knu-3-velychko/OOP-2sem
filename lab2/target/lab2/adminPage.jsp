@@ -76,7 +76,7 @@
         let cardsBlock<%=i%> = [];
         <% for(Card card: cards){ %>
         cards<%=i%>.push("<%=card.toString()%>");
-        cardsID<%=i%>.push("<%=card.getId()%>");
+        cardsID<%=i%>.push("<%=card.getName()%>");
         cardsBlock<%=i%>.push(<%=card.isBlocked()%>);
         <%}%>
         cards.push(cards<%=i%>);

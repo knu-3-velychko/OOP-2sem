@@ -54,7 +54,7 @@ public class AdminPageServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         if (checkAdmin(req, resp)) return;
 
         Long userId = Long.parseLong(req.getParameter("users"));

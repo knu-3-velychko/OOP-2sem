@@ -120,7 +120,7 @@
         <% for (Card card : cards) { %>
             <tr>
                 <th> <%=card.getName()%>   </th>
-                <th> <%=card.getBalance()%></th>
+                <th> <%=card.getAccount().getBalance()%></th>
                 <th> <%=card.isBlocked()%> </th>
             </tr>
         <%}%>
@@ -140,9 +140,9 @@
                  <%if(type!=1){%>
                      let pays<%=i%>=[];
                      let comments<%=i%>=[];
-                     <% for(int j = 0; j < cards.get(i).getPayments().size(); j++) {%>
-                         pays<%=i%>.push(<%=cards.get(i).getPayments().get(j).getPay()%>);
-                         comments<%=i%>.push("<%=cards.get(i).getPayments().get(j).getComment()%>");
+                     <% for(int j = 0; j < cards.get(i).getAccount().getPayments().size(); j++) {%>
+                         pays<%=i%>.push(<%=cards.get(i).getAccount().getPayments().get(j).getPay()%>);
+                         comments<%=i%>.push("<%=cards.get(i).getAccount().getPayments().get(j).getComment()%>");
                      <%}%>
                      pays.push(pays<%=i%>);
                      comments.push(comments<%=i%>);

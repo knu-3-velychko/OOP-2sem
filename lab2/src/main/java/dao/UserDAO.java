@@ -17,7 +17,7 @@ public class UserDAO {
 
     private static final String GET_ADMIN_USER = "SELECT id FROM users WHERE role='ADMIN' AND username = ? AND password = ?";
     private static final String GET_USER_BY_LOGIN = "SELECT id FROM users WHERE username = ? AND password = ?";
-    private static final String GET_USERS = "SELECT  id, username FROM users";
+    private static final String GET_USERS = "SELECT  id, username FROM users WHERE role='USER'";
 
     private static final String DELETE_USER = "DELETE FROM users WHERE id = ?";
 
@@ -46,7 +46,7 @@ public class UserDAO {
 
     public boolean isAdmin(String username, String password) {
         Connection connection = jdbcConnection.getConnection();
-        int clientId = -1;
+        Long clientId = -1L;
         try {
             PreparedStatement statement = connection.prepareStatement(GET_ADMIN_USER);
             statement.setString(1, username);
@@ -54,12 +54,12 @@ public class UserDAO {
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
-                clientId = resultSet.getInt(1);
+                clientId = resultSet.getLong(1);
             }
 
             statement.close();
 
-            return clientId == -1;
+            return clientId != -1L;
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e.getMessage());
