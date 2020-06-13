@@ -103,7 +103,9 @@ public class CardDAO {
 
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                cards.add(cardMapper.map(resultSet));
+                Card card = cardMapper.map(resultSet);
+                card.setAccount(accountDAO.findAccountById(card.getAccount().getId()));
+                cards.add(card);
             }
 
             statement.close();

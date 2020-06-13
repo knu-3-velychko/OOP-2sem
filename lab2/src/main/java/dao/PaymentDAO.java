@@ -55,6 +55,8 @@ public class PaymentDAO {
             statement.setFloat(2, sum);
             statement.setString(3, comment);
 
+            statement.executeUpdate();
+
             accountDAO.updateAccountBalance(sum, cardId);
 
             statement.close();

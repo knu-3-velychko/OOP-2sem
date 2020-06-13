@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class PaymentDaoTest {
     private final CardDAO cardDao = (CardDAO) BeanFactory.getBean(CardDAO.class);
@@ -17,7 +18,7 @@ public class PaymentDaoTest {
     private final PaymentDAO paymentDao = (PaymentDAO) BeanFactory.getBean(PaymentDAO.class);
 
     private User generateUser() {
-        return new User(generateStr(), generateStr(), generateStr(), generateStr(),new ArrayList<>());
+        return new User(generateStr(), generateStr(), generateStr(), generateStr(), new ArrayList<>());
     }
 
     private String generateStr() {
@@ -43,13 +44,15 @@ public class PaymentDaoTest {
 
         List<Card> cards = cardDao.getCards(userId);
 
+        cards = cards.stream().peek(item -> item.getAccount().setPayments(paymentDao.getPaymentsByAccountId(item.getAccount().getId()))).collect(Collectors.toList());
+
         Assert.assertEquals(comment, cards.get(0).getAccount().getPayments().get(0).getComment());
-        Assert.assertEquals(java.util.Optional.of(sum), cards.get(0).getAccount().getPayments().get(0).getPay());
+        Assert.assertEquals(Float.valueOf(sum), cards.get(0).getAccount().getPayments().get(0).getPay());
 
         paymentDao.deletePayments(cardId);
         cardDao.deleteCard(cardId);
         cardId = cardDao.findCardId(userId, 0L);
-        Assert.assertEquals(java.util.Optional.ofNullable(cardId), -1);
+        Assert.assertEquals(cardId, Long.valueOf(-1L));
 
         userDao.deleteUser(userId);
     }

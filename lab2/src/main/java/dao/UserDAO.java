@@ -35,7 +35,7 @@ public class UserDAO {
 
             statement.close();
 
-            return affectedRows <= 0;
+            return affectedRows >= 0;
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e.getMessage());

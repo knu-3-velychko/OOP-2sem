@@ -6,6 +6,7 @@ import dao.PaymentDAO;
 import dao.UserDAO;
 import entity.Card;
 import entity.Payment;
+import mapper.AccountMapper;
 import mapper.CardMapper;
 import mapper.PaymentMapper;
 import mapper.UserMapper;
@@ -30,9 +31,10 @@ public class BeanFactory {
             jdbcConnection = JdbcConnection.getInstance();
         } catch (SQLException | ClassNotFoundException | FileNotFoundException e) {
             logger.error(e.getMessage());
+            e.printStackTrace();
         }
 
-        AccountDAO accountDAO = new AccountDAO(jdbcConnection);
+        AccountDAO accountDAO = new AccountDAO(jdbcConnection, new AccountMapper());
         CardDAO cardDAO = new CardDAO(jdbcConnection, new CardMapper(), accountDAO);
         UserDAO userDAO = new UserDAO(jdbcConnection, cardDAO);
         PaymentDAO paymentDAO = new PaymentDAO(jdbcConnection, new PaymentMapper(), accountDAO);
@@ -42,7 +44,7 @@ public class BeanFactory {
         beans.put(UserDAO.class, userDAO);
         beans.put(PaymentDAO.class, paymentDAO);
 
-        CardService cardService = new CardService(cardDAO);
+        CardService cardService = new CardService(cardDAO,paymentDAO);
         PaymentService paymentService = new PaymentService(paymentDAO, cardDAO);
         UserService userService = new UserService(userDAO);
 

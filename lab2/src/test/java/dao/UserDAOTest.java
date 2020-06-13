@@ -32,11 +32,11 @@ public class UserDAOTest {
         Assert.assertTrue(userDao.addUser(user));
 
         Long id = userDao.findUserByLogin(user.getUsername(), user.getPassword());
-        assertNotEquals(java.util.Optional.ofNullable(id), -1L);
+        assertNotEquals(id, Long.valueOf(-1L));
 
         userDao.deleteUser(id);
         id = userDao.findUserByLogin(user.getUsername(), user.getPassword());
 
-        assertEquals(java.util.Optional.ofNullable(id), -1L);
+        assertEquals(id, Long.valueOf(-1L));
     }
 }

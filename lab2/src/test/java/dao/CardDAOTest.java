@@ -6,17 +6,14 @@ import org.junit.Assert;
 import org.junit.Test;
 import util.BeanFactory;
 
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class CardDAOTest {
     private final CardDAO cardDao = (CardDAO) BeanFactory.getBean(CardDAO.class);
     private final UserDAO userDao = (UserDAO) BeanFactory.getBean(UserDAO.class);
 
     private User generateUser() {
-        return new User(generateStr(), generateStr(), generateStr(), generateStr(),new ArrayList<>());
+        return new User(generateStr(), generateStr(), generateStr(), generateStr(), new ArrayList<>());
     }
 
     private String generateStr() {
@@ -41,7 +38,7 @@ public class CardDAOTest {
 
         cardDao.deleteCard(cardId);
         cardId = cardDao.findCardId(userId, 0L);
-        Assert.assertEquals(java.util.Optional.ofNullable(cardId), -1L);
+        Assert.assertEquals(cardId, Long.valueOf(-1L));
 
         userDao.deleteUser(userId);
     }
