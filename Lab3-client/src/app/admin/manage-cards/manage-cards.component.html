@@ -1,0 +1,5 @@
+<mat-card class="cards">
+    <div *ngFor="let card of cards|async">
+        <app-admin-card [card]="card"></app-admin-card>
+    </div>
+</mat-card>

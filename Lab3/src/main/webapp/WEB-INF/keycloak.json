@@ -1,0 +1,8 @@
+{
+  "realm": "Lab-3",
+  "bearer-only": true,
+  "auth-server-url": "http://localhost:8080/auth/",
+  "ssl-required": "external",
+  "resource": "Lab3_backend",
+  "confidential-port": 0
+}

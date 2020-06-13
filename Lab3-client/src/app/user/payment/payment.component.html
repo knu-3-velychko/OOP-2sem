@@ -1,0 +1,31 @@
+<div class="container" fxFlexLayout="row" fxFlexAlign="center">
+    <mat-card fxFlexLayout="column" fxFlexAlign="space-between">
+        <mat-card-header>
+            <mat-card-title>Payment</mat-card-title>
+        </mat-card-header>
+        <mat-card-content fxFlexLayout="row" fxFlexAlign="center">
+            <form [formGroup]="form" fxFlexLayout="column" fxFlexAlign="center">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Card from</mat-label>
+                    <mat-select id="type" formControlName="cardFrom" class="form-control">
+                        <mat-option *ngFor='let card of cards |async' [value]="card">
+                            <p *ngIf="!card.blocked"> Card number: {{card.cardNumber}} | Balance:
+                                {{card.balance}}</p>
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Card to</mat-label>
+                    <input matInput formControlName="cardTo" #input maxlength="30" placeholder="Card to">
+                </mat-form-field>
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Amount</mat-label>
+                    <input matInput formControlName="amount" #input type="number" placeholder="Amount">
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="accent" (click)="submit()">Submit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

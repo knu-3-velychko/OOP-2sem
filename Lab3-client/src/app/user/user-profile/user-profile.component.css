@@ -1,0 +1,11 @@
+.container {
+    margin: 1em;
+}
+
+.cards {
+    width: 50%;
+}
+
+.card {
+    margin: 1em !important;
+}
