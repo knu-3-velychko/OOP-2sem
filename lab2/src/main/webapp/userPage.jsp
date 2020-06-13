@@ -1,4 +1,4 @@
-<%@ page import="entities.Card" %>
+<%@ page import="entity.Card" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
