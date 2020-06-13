@@ -1,6 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="entities.User" %>
-<%@ page import="entities.Card" %>
+<%@ page import="entity.User" %>
+<%@ page import="entity.Card" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
