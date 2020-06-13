@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="60f6fd14-4962-4de1-bbd0-e89b44cddae5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/CardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/PaymentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/services/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/services/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/servlets/AdminPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/servlets/RegistrationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/servlets/UserPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/userPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/dao/CardDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/dao/PaymentDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/dao/UserDaoTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cmTD8A7EBCjaR3CCHaU1OJmrXc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="app.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.servlets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Taya\Documents\Projects\OOP-2sem\lab2\src\main\webapp" />
+      <recent name="C:\Users\Taya\Documents\Projects\OOP-2sem\lab2\src\main\java\app\entities" />
+      <recent name="C:\Users\Taya\Documents\Projects\OOP-2sem\lab2\src\main\java\app\dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PaymentDaoTest.testAddDeletePayment">
+    <configuration name="All in lab2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in lab2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardDaoTest.testSetBlocked" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.dao" />
+      <option name="MAIN_CLASS_NAME" value="app.dao.CardDaoTest" />
+      <option name="METHOD_NAME" value="testSetBlocked" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentDaoTest.testAddDeletePayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.dao" />
+      <option name="MAIN_CLASS_NAME" value="app.dao.PaymentDaoTest" />
+      <option name="METHOD_NAME" value="testAddDeletePayment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PaymentDaoTest.testAddDeletePayment" />
+        <item itemvalue="JUnit.All in lab2 (1)" />
+        <item itemvalue="JUnit.CardDaoTest.testSetBlocked" />
+        <item itemvalue="JUnit.All in lab2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60f6fd14-4962-4de1-bbd0-e89b44cddae5" name="Default Changelist" comment="" />
+      <created>1591132647191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591132647191</updated>
+      <workItem from="1591132653614" duration="11307000" />
+      <workItem from="1591188307895" duration="999000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591133635030">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="0" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1591133635030" />
+    <state width="1326" height="267" key="GridCell.Tab.0.bottom" timestamp="1591189307478">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="267" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1591189307478" />
+    <state width="1326" height="267" key="GridCell.Tab.0.center" timestamp="1591189307477">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="267" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1591189307477" />
+    <state width="1326" height="267" key="GridCell.Tab.0.left" timestamp="1591189307477">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="267" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1591189307477" />
+    <state width="1326" height="267" key="GridCell.Tab.0.right" timestamp="1591189307477">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="267" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1591189307477" />
+    <state x="554" y="258" width="308" height="355" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591184598847">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="554" y="258" width="308" height="355" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1368.872@0.0.1368.872" timestamp="1591184598847" />
+    <state x="114" y="227" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591183430429">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="114" y="227" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1591183430428" />
+    <state x="343" y="200" key="run.anything.popup" timestamp="1591188498705">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="343" y="200" key="run.anything.popup/0.0.1368.872@0.0.1368.872" timestamp="1591188498705" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab2$All_in_lab2__1_.ic" NAME="All in lab2 (1) Coverage Results" MODIFIED="1591188725418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/lab2$All_in_lab2.ic" NAME="All in lab2 Coverage Results" MODIFIED="1591184258265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
